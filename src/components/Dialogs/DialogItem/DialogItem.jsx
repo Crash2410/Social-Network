@@ -2,9 +2,11 @@ import { NavLink } from 'react-router-dom';
 import style from './DialogItem.module.css';
 
 const dialogItem = (props) => {
+
     return (
         <div className={`${style.dialog} ${style.active}`}>
-            <NavLink to={`/dialogs/${props.id}`}>{props.name}</NavLink>
+            <img src={props.state.img} alt="" />
+            <NavLink to={`/dialogs/${props.state.id}`}>{props.state.name}</NavLink>
         </div>
     )
 }
