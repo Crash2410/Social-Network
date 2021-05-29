@@ -6,10 +6,10 @@ import Friend from './components/Friends/Friend/Friend';
 import Friends from './components/Friends/Friends';
 import Header from './components/Header/Header';
 import Music from './components/Music/Music';
-import Navbar from './components/Navbar/Navbar';
 import News from './components/News/News';
 import Profile from './components/Profile/Profile';
 import Settings from './components/Settings/Settings';
+import Sidebar from './components/Sidebar/Sidebar';
 
 
 function App(props) {
@@ -17,7 +17,7 @@ function App(props) {
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Navbar state ={props.state.navbar}/>
+        <Sidebar state = {props.state.sidebar}/>
         <div className='app-wrapper-content'>
           <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
           <Route path='/profile' render={() => <Profile state={props.state.profilePage} />} />

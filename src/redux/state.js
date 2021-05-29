@@ -58,7 +58,7 @@ let state = {
             }
         ]
     },
-    navbar: {
+    sidebar: {
         friends: [{
                 id: 1,
                 name: 'Dima',

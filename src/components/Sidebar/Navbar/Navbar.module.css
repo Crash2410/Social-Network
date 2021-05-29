@@ -1,20 +1,20 @@
-.nav {
-    grid-area: n;
-    min-height: 300px;
-    max-height: 500px;
-    max-width: 200px;
-    background-color: burlywood;
+.item {
+    font-size: 14px;
+    margin: 5px 0px 0px 20px;
+}
+
+.item:first-child {
+    margin-top: 20px;
 }
 
 .item a {
-    padding: 0px 0px 0px 20px;
     text-decoration: none;
     color: white;
 }
 
 .item:nth-last-child(2) {
-    margin-top: 30px;
     font-size: 30px;
+    margin-top: 20px;
 }
 
 .item a.activeLink {
@@ -33,7 +33,7 @@
     margin-top: 10px;
 }
 
-.itemFriend a{
+.itemFriend a {
     text-decoration: none;
     color: white;
 }
