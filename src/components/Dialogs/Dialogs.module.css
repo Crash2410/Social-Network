@@ -1,7 +1,16 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "dialogItems messages"
+    "none addMessage";
 }
+.addMessage{
+    grid-area: addMessage;
+}
+
+
 
 
 

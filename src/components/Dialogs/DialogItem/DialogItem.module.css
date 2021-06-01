@@ -1,5 +1,6 @@
 .dialogsItems {
     padding: 10px;
+    grid-area: dialogItems;
 }
 
 .dialogsItems .active {
